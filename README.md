@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementation of a Contextual Chatbot in PyTorch.  
 Simple chatbot implementation with PyTorch. 
 
@@ -81,3 +82,6 @@ Have a look at [intents.json](intents.json). You can customize it according to y
   ]
 }
 ```
+=======
+# AI-PYTHON-CHATBOT-
+>>>>>>> origin/main
