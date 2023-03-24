@@ -79,6 +79,67 @@
         "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
         "What did the buffalo say when his son left for college? Bison."
       ]
+    },
+     {
+  "tag": "employee_info",
+  "patterns": [
+    "What is the name of employee {emp_no}?",
+    "Can you tell me the name of employee {emp_no}?",
+    "Employee {emp_no} name please"
+  ],
+  "responses": [
+    "The first name of the employee with ID {emp_no} is {first_name}"
+  ]
+              },
+
+
+    {
+      "tag": "employee_hire_date",
+      "patterns": [
+        "When was {first_name} {last_name} hired?",
+        "What is the hire date of {first_name} {last_name}?",
+        "Tell me the hire date of {first_name} {last_name}"
+      ],
+      "responses": [
+        "The hire date of {first_name} {last_name} is {hire_date}"
+      ]
+    },
+    {
+      "tag": "department_info",
+      "patterns": [
+        "What is the name of department d001?",
+        "Department d009 name please",
+        "Find the department name for d005"
+      ],
+      "responses": [
+        "The name of the department with ID {dept_no} is {dept_name}"
+      ]
+    },
+
+   {
+      "tag": "employee_title",
+      "patterns": [
+        "What does employee {emp_no} do?",
+        "What is the title of employee {emp_no}?",
+        "Tell me the position of employee {emp_no}"
+      ],
+      "responses": [
+        "Employee {emp_no} has the title of {title}."
+      ]
+    },
+
+    {
+      "tag": "employee_salary",
+      "patterns": [
+        "What is the salary of employee {emp_no}?",
+        "Tell me the salary of employee {emp_no}",
+        "How much does employee {emp_no} earn?"
+      ],
+      "responses": [
+        "Employee {emp_no} has a salary of ${salary}."
+      ]
     }
+
+
   ]
 }

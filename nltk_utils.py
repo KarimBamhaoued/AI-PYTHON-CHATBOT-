@@ -1,13 +1,36 @@
 import numpy as np
 import nltk
+
+import certifi
+
+import os
+import ssl
+import nltk
+
+
+
+import os
+os.environ['SSL_CERT_FILE'] = '/Users/mac/miniconda3/lib/python3.10/site-packages/pip/_vendor/certifi/cacert.pem'
+import nltk
+nltk.download('punkt')
+
+
+
+
+
+
+nltk_data_dir = "/path/to/nltk_data"
+os.environ["NLTK_DATA"] = nltk_data_dir
+
 # nltk.download('punkt')
 from nltk.stem.porter import PorterStemmer
+
 stemmer = PorterStemmer()
+
 
 def tokenize(sentence):
     """
-    split sentence into array of words/tokens
-    a token can be a word or punctuation character, or number
+    Tokenize a sentence into words
     """
     return nltk.word_tokenize(sentence)
 
@@ -37,7 +60,7 @@ def bag_of_words(tokenized_sentence, words):
     # initialize bag with 0 for each word
     bag = np.zeros(len(words), dtype=np.float32)
     for idx, w in enumerate(words):
-        if w in sentence_words: 
+        if w in sentence_words:
             bag[idx] = 1
 
     return bag
