@@ -4,7 +4,7 @@ import pymysql
 mydb = pymysql.connect(
     host="localhost",
     user="root",
-    password="kormaz88",
+    password="",
     database="employees",
 )
 print("Database connection object:", mydb)
