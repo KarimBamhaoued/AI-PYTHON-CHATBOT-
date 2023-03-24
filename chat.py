@@ -34,7 +34,7 @@ def get_response(message):
     mydb = pymysql.connect(
         host="localhost",
         user="root",
-        password="kormaz88",
+        password="",
         database="employees",
     )
     mycursor = mydb.cursor()
